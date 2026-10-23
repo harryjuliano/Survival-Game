@@ -1,0 +1,135 @@
+[
+  {
+    "name": "coast_sand_02",
+    "local": "textures/sand",
+    "source": "https://polyhaven.com/a/coast_sand_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "name": "grass_ground",
+    "local": "textures/grass",
+    "source": "https://polyhaven.com/a/grass_ground",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    }
+  },
+  {
+    "name": "brown_planks_03",
+    "local": "textures/wood",
+    "source": "https://polyhaven.com/a/brown_planks_03",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "name": "grey_plaster",
+    "local": "textures/plaster",
+    "source": "https://polyhaven.com/a/grey_plaster",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "name": "clay_roof_tiles",
+    "local": "textures/roof",
+    "source": "https://polyhaven.com/a/clay_roof_tiles",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    }
+  },
+  {
+    "name": "bark_brown_02",
+    "local": "textures/bark",
+    "source": "https://polyhaven.com/a/bark_brown_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "name": "kloofendal_48d_partly_cloudy_puresky",
+    "local": "environment/sky.hdr",
+    "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+    "license": "CC0-1.0",
+    "authors": {
+      "Greg Zaal": "Original",
+      "Jarod Guest": "Sky edits"
+    }
+  },
+  {
+    "name": "island_tree_01",
+    "local": "models/island_tree_01.glb",
+    "source": "https://polyhaven.com/a/island_tree_01",
+    "license": "CC0-1.0",
+    "changes": "Simplified geometry; two LODs; embedded 1K JPEG textures recompressed, runtime material sharing.",
+    "authors": {
+      "Rob Tuytel": "scanning, processing",
+      "Rico Cilliers": "cleanup, processing"
+    }
+  },
+  {
+    "name": "fern_02",
+    "local": "models/fern_02.glb",
+    "source": "https://polyhaven.com/a/fern_02",
+    "license": "CC0-1.0",
+    "changes": "Simplified geometry; two LODs; embedded 1K JPEG textures recompressed, runtime material sharing.",
+    "authors": {
+      "Rob Tuytel": "scanning",
+      "Rico Cilliers": "modeling"
+    }
+  },
+  {
+    "name": "coast_rocks_02",
+    "local": "models/coast_rocks_02.glb",
+    "source": "https://polyhaven.com/a/coast_rocks_02",
+    "license": "CC0-1.0",
+    "changes": "Simplified geometry; two LODs; embedded 1K JPEG textures recompressed, runtime material sharing.",
+    "authors": {
+      "Rob Tuytel": "Photography, processing",
+      "Rico Cilliers": "cleanup"
+    }
+  },
+  {
+    "name": "lambis_shell",
+    "local": "models/lambis_shell.glb",
+    "source": "https://polyhaven.com/a/lambis_shell",
+    "license": "CC0-1.0",
+    "changes": "Simplified geometry; two LODs; embedded 1K JPEG textures recompressed, runtime material sharing.",
+    "authors": {
+      "Kuutti Siitonen": "All"
+    }
+  },
+  {
+    "name": "sofa_03",
+    "local": "models/sofa_03.glb",
+    "source": "https://polyhaven.com/a/sofa_03",
+    "license": "CC0-1.0",
+    "changes": "Simplified geometry; two LODs; embedded 1K JPEG textures recompressed, runtime material sharing.",
+    "authors": {
+      "Fran Calvente": "All"
+    }
+  },
+  {
+    "name": "MakeHuman male",
+    "local": "characters/male.glb",
+    "source": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "core_source": "https://github.com/makehumancommunity/makehuman",
+    "license": "CC0-1.0",
+    "changes": "Gender morph, clothed model, 36-joint remap, original Idle/Walk/Run/Jump clips, 1K images and glTF conversion."
+  },
+  {
+    "name": "MakeHuman female",
+    "local": "characters/female.glb",
+    "source": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "core_source": "https://github.com/makehumancommunity/makehuman",
+    "license": "CC0-1.0",
+    "changes": "Gender morph, clothed model, 36-joint remap, original Idle/Walk/Run/Jump clips, 1K images and glTF conversion."
+  }
+]

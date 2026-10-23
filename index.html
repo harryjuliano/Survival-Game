@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Room Decor 3D — Rumah di Pulau</title>
+  </head>
+  <body>
+    <div id="boot">
+      <div>
+        <b>Rumah kecil. Banyak cerita.</b>
+        <p id="bootText">Menyiapkan pulau dan perabot…</p>
+      </div>
+    </div>
+    <div class="brand">
+      <b>Room Decor 3D</b><small>SEBUAH RUANG UNTUKMU</small>
+    </div>
+    <div id="gameUI" hidden>
+      <div class="hud glass">
+        <button id="logout" title="Kembali ke pemilihan karakter">
+          ⏻ Keluar
+        </button>
+        <div>
+          <strong id="greeting">Halo!</strong
+          ><small id="roomLabel">Kamar Tidur</small
+          ><small id="timer" hidden>☾ 1:00</small>
+        </div>
+      </div>
+      <div class="tools glass">
+        <button id="lampButton">💡 Lampu</button
+        ><button id="orbitButton">◈ Zoom/Orbit</button
+        ><button id="wallButton">⌂ Dinding: otomatis</button
+        ><button id="soundButton">♫ Suara: mati</button
+        ><select id="quality" aria-label="Kualitas grafik">
+          <option value="low">Grafik: Low</option>
+          <option value="medium" selected>Grafik: Medium</option>
+          <option value="high">Grafik: High</option></select
+        ><button id="codeButton">⌘ Code</button>
+      </div>
+      <div class="bar glass">
+        <select id="catalog" aria-label="Pilih dekor">
+          <option value="karpet">Karpet</option>
+          <option value="rak buku">Rak buku</option>
+          <option value="meja kopi">Meja kopi</option>
+          <option value="kursi">Kursi</option>
+          <option value="pot kecil">Pot kecil</option>
+          <option value="sofa">Sofa</option>
+          <option value="meja makan">Meja makan</option></select
+        ><button id="add" class="primary">＋ Dekor</button
+        ><button id="remove">⌫ Hapus</button
+        ><button id="uploadButton">
+          ▧ Foto <span id="photoCount">0/10</span></button
+        ><input id="upload" type="file" accept="image/*" multiple hidden />
+      </div>
+      <div class="help">
+        <kbd>W A S D</kbd> · <kbd>Shift</kbd> lari / Panah · Jalan &nbsp;
+        <kbd>Spasi</kbd> · Lompat<br /><kbd>E</kbd> · Tidur / Pintu · Klik kanan
+        / sentuh untuk orbit<br />Seret perabot · Klik foto untuk layar penuh ·
+        Gulir untuk zoom
+      </div>
+      <div id="selected">Klik perabot untuk memilih</div>
+      <button id="action" class="action" hidden>Buka pintu</button>
+      <div id="mobile">
+        <span></span><button data-key="KeyW">▲</button><span></span
+        ><button data-key="KeyA">◀</button><button data-key="KeyS">▼</button
+        ><button data-key="KeyD">▶</button>
+      </div>
+      <button id="jump">↑ Lompat</button
+      ><button id="runMobile" class="mobileRun">Lari</button>
+    </div>
+    <div id="onboarding">
+      <form id="startForm" class="welcome glass">
+        <div class="eyebrow">SELAMAT DATANG DI PULAU</div>
+        <h1>Rumahmu.<br />Ceritamu.</h1>
+        <p>
+          Jelajahi rumah di tepi laut, tata sudut favoritmu, dan buat ruang ini
+          terasa seperti dirimu.
+        </p>
+        <label for="playerName">Siapa namamu?</label
+        ><input
+          id="playerName"
+          type="text"
+          maxlength="14"
+          placeholder="Masukkan namamu"
+          value="Harry"
+          required
+          autocomplete="off"
+        />
+        <div>Pilih karakter</div>
+        <div class="choices">
+          <label class="choice"
+            ><input name="gender" value="male" type="radio" checked /><span
+              class="swatch"
+              >🟤 🟢</span
+            ><b>Laki-laki</b>
+            <div class="fine">Pakaian kasual & rambut pendek</div></label
+          ><label class="choice"
+            ><input name="gender" value="female" type="radio" /><span
+              class="swatch"
+              >🟠 🟩</span
+            ><b>Perempuan</b>
+            <div class="fine">Pakaian kasual & rambut bob</div></label
+          >
+        </div>
+        <button id="start" class="primary">Mulai menjelajah →</button>
+        <div class="fine">
+          Tanpa akun · Semua progres hanya selama sesi ini.<br />Aset dimuat
+          dari paket game ini.
+        </div>
+      </form>
+    </div>
+    <aside id="editor" class="glass" hidden>
+      <header>
+        <b>Studio kode</b
+        ><button id="closeEditor" aria-label="Tutup editor">×</button>
+      </header>
+      <small>Ubah suasana rumah lewat JavaScript.</small>
+      <div class="codebox">
+        <pre id="highlight" aria-hidden="true"></pre>
+        <textarea id="code" spellcheck="false" aria-label="Editor JavaScript">
+// Ciptakan suasana favoritmu
+setLampColor("#ffdcaa");
+setLampIntensity(1.6);
+toggleTV(true);
+setTVScreenColor("#7d9a97");
+setPlantColor("#71816c");
+scaleObject("sofa", 1.2);</textarea>
+      </div>
+      <div>
+        <button id="run" class="primary">▶ Run Code</button>
+        <button id="clearLog">Clear Log</button>
+      </div>
+      <div id="logs" role="log" aria-live="polite"></div>
+      <small
+        >API: setLampColor, setLampIntensity, toggleLamp, toggleTV,
+        setTVScreenColor, setPlantColor, scaleObject, addDecor.<br />Jalankan
+        kode yang Anda pahami; kode dapat mengakses halaman ini.</small
+      >
+    </aside>
+    <div id="sleep" hidden><b>Zzz…</b></div>
+    <div id="lightbox" hidden role="dialog" aria-label="Foto layar penuh">
+      <span>Klik di mana saja atau Esc untuk menutup</span
+      ><img id="fullPhoto" alt="Foto pilihan" />
+    </div>
+    <div id="toast" hidden role="status"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
